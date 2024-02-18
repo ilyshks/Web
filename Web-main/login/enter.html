@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Style Login Page</title>
+    <link rel="stylesheet" href="enter.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to VK</h2>
+        <form class="registration-form" id="registrationForm">
+            <h2>Вход</h2>
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username">
+                <span id="usernameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти">
+            </div>
+            <div class="enter">
+                <p>Нет аккаунта? <a href="login.html">Зарегистрироваться</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="enter.js"></script>
+</body>
+</html>
