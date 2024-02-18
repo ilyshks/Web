@@ -12,5 +12,24 @@
         <a href="../AI-Helper/AI-Helper.html">AI-помощник</a>
         <a href="../Profile/profile.html">Профиль</a>
     </div>
+    <div class="container">
+        <h1>Переводчик</h1>
+        <div class="language-selector">
+            <select id="source-language">
+                <option value="en">Английский</option>
+                <option value="ru">Русский</option>
+                <!-- Тут добавлять языки -->
+            </select>
+            <span>&#8644;</span> <!-- Стрелка для выбора направления перевода -->
+            <select id="target-language">
+                <option value="ru">Русский</option>
+                <option value="en">Английский</option>
+                <!-- Тут добавлять языки -->
+            </select>
+        </div>
+        <textarea id="source-text" placeholder="Введите текст для перевода"></textarea>
+        <button id="translate-button">Перевести</button>
+        <textarea id="target-text" placeholder="Перевод" disabled></textarea>
+    </div>
 </body>
 </html>
