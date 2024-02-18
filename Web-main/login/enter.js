@@ -37,9 +37,16 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 
     if (password === '') {
         passwordError.textContent = 'Пароль не может быть пустым';
+    } else if (!validatePassword(password)) {
+        passwordError.textContent = 'Пароль должен содержать не менее 8 символов, буквы и цифры';
     }
 
-    if (username !== '' && validateEmail(email) && password !== '') {
-        alert('Регистрация прошла успешно');
+    if (username !== '' && validatePassword(password)) {
+        window.open("../Profile/profile.html","_self");
     }
 });
+
+function validatePassword(password) {
+    var passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/;
+    return passwordRegex.test(password);
+}
