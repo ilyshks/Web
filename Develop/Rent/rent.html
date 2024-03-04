@@ -1,367 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Аренда трассы</title>
-
-    <link rel="stylesheet" href="bootstrap-grid.css">
-    <link rel="stylesheet" href="style.css">
-
-    <script src="/themes/mrw/js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="/js/promocode.js"></script>
-    <script src="/themes/mrw/js/jquery.royalslider.min.js"></script>
-    <script src="/themes/mrw/js/jquery.magnific-popup.min.js"></script>
-    <script src="/themes/mrw/js/jquery.sticky-kit.min.js"></script>
-    <script src="/themes/mrw/js/jquery.datepick.min.js"></script>
-    <script src="/themes/mrw/js/squirrelly.min.js"></script>
-    <script src="/themes/mrw/js/js.cookie.min.js"></script>
-    <script src="/themes/mrw/js/svg4everybody.min.js"></script>
-    <script src="/themes/mrw/js/project.js"></script>
-    <script src="/themes/mrw/js/script.js"></script>
-    <script src="/themes/mrw/js/common/global.js"></script>
-
-
-    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-    <meta name="HandheldFriendly" content="true"/>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/themes/mrw/i/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/themes/mrw/i/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/themes/mrw/i/favicon-16x16.png">
-    <meta name="theme-color" content="#D41816">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rent.css">
 </head>
-<body class="">
-<div id="wrapper">
-    <div class="header">
-    <div class="container-fluid">
-        <ul class="header__nav d-none d-lg-flex align-items-center justify-content-around" id="yw0">
-<li class="header__logo"><a href="/"><img src="/themes/mrw/i/logo.svg" alt="Moscow RaceWay"></a></li>
-<li><a href="/info">Трасса</a>
-<ul>
-<li><a href="/info">Конфигурация</a></li>
-<li><a href="/info/facts">Интересные факты</a></li>
-</ul>
-</li>
-<li><a href="/events">Календарь</a></li>
-<li><a href="/trackdays/start">Трек дни</a>
-<ul>
-<li><a href="https://club.moscowraceway.ru/">Личный кабинет</a></li>
-<li><a href="https://club.moscowraceway.ru/gp-mrw">Гран При Moscow Raceway</a></li>
-</ul>
-</li>
-<li class="color-red"><a href="/winter">Зима</a></li>
-<li class="-active"><a href="/rent">Аренда</a>
-<ul>
-<li class="-active"><a href="/rent">Трасса</a></li>
-<li><a href="/rent/vip">VIP-ложи</a></li>
-<li><a href="/rent/adv">Дополнительные возможности</a></li>
-<li><a href="/rent/auto">Автомобили</a></li>
-</ul>
-</li>
-<li><a href="/shop">Магазин</a>
-<ul>
-<li><a href="/shop/clothes">Одежда</a></li>
-<li><a href="/shop/gifts">Сувениры</a></li>
-<li><a href="/shop/10-years-mrw">10 лет Moscow Raceway</a></li>
-<li><a href="/tickets">Билеты</a></li>
-</ul>
-</li>
-<li><a href="/news">Новости</a>
-<ul>
-<li><a href="/news/announcement">Анонсы</a></li>
-<li><a href="/news/motorsport">Автоспорт</a></li>
-<li><a href="/news/track">Трасса</a></li>
-</ul>
-</li>
-<li><a href="/contacts">Контакты</a>
-<ul>
-<li><a href="/whereweare">Как добраться</a></li>
-<li><a href="/contacts">Центральный офис</a></li>
-<li><a href="/volokolamsk/food">Инфраструктура рядом</a></li>
-</ul>
-</li>
-<li><a href="/media/galleries">Медиа</a>
-<ul>
-<li><a href="/media/galleries">Фото</a></li>
-<li><a href="/media/videos">Видео</a></li>
-<li><a href="https://moscowraceway10years.ru/">10 лет Moscow Raceway</a></li>
-</ul>
-</li>
-</ul>        <div class="header-mobile d-lg-none d-flex align-items-center">
-            <div class="header-mobile__logo">
-                <a href="/"><img src="/themes/mrw/i/logo.svg" alt="Moscow RaceWay"></a>
-            </div>
-            <div class="header-mobile__calendar ml-auto">
-                <a href="/events"><svg class="icon-calendar"><use xlink:href="/themes/mrw/i/sprite.svg#icon-calendar"></use></svg></a>
-            </div>
-            <div class="header-mobile__burger">
-                <a href="javascript:void(0)"><svg class="icon-burger"><use xlink:href="/themes/mrw/i/sprite.svg#icon-burger"></use></svg></a>
-            </div>
-            <div class="header-mobile__nav">
-                <div class="header-mobile__title">
-                    Меню
-                </div>
-                <ul id="yw1">
-<li><a href="/info">Трасса</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="/info">Конфигурация</a></li>
-<li><a href="/info/facts">Интересные факты</a></li>
-</ul>
-</li>
-<li><a href="/events">Календарь</a></li>
-<li><a href="/trackdays/start">Трек дни</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="https://club.moscowraceway.ru/">Личный кабинет</a></li>
-<li><a href="https://club.moscowraceway.ru/gp-mrw">Гран При Moscow Raceway</a></li>
-</ul>
-</li>
-<li class="color-red"><a href="/winter">Зима</a></li>
-<li class="-active"><a href="/rent">Аренда</a><div class="header-mobile__arrow"></div>
-<ul>
-<li class="-active"><a href="/rent">Трасса</a></li>
-<li><a href="/rent/vip">VIP-ложи</a></li>
-<li><a href="/rent/adv">Дополнительные возможности</a></li>
-<li><a href="/rent/auto">Автомобили</a></li>
-</ul>
-</li>
-<li><a href="/shop">Магазин</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="/shop/clothes">Одежда</a></li>
-<li><a href="/shop/gifts">Сувениры</a></li>
-<li><a href="/shop/10-years-mrw">10 лет Moscow Raceway</a></li>
-<li><a href="/tickets">Билеты</a></li>
-</ul>
-</li>
-<li><a href="/news">Новости</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="/news/announcement">Анонсы</a></li>
-<li><a href="/news/motorsport">Автоспорт</a></li>
-<li><a href="/news/track">Трасса</a></li>
-</ul>
-</li>
-<li><a href="/contacts">Контакты</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="/whereweare">Как добраться</a></li>
-<li><a href="/contacts">Центральный офис</a></li>
-<li><a href="/volokolamsk/food">Инфраструктура рядом</a></li>
-</ul>
-</li>
-<li><a href="/media/galleries">Медиа</a><div class="header-mobile__arrow"></div>
-<ul>
-<li><a href="/media/galleries">Фото</a></li>
-<li><a href="/media/videos">Видео</a></li>
-<li><a href="https://moscowraceway10years.ru/">10 лет Moscow Raceway</a></li>
-</ul>
-</li>
-</ul>
-                <div class="header-mobile__close">
-                    <a href="javascript:void(0)"><svg class="icon-close"><use xlink:href="/themes/mrw/i/sprite.svg#icon-close"></use></svg></a>
-                </div>
-            </div>
-        </div>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="../RacingTrack/track.html">Трасса</a></li>
+                <li><a href="../Auto/auto.html">Автомобили</a></li>
+                <li><a href="rent.html">Аренда</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h1>Аренда трека</h1>
+        <form action="#" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Время:</label>
+            <select id="date" name="date" required>
+                <option value="">Время</option>
+                <option value="date1">9:00-12:00</option>
+                <option value="date2">13:00-16:00</option>
+                <option value="date3">17:00-20:00</option>
+            </select>
+            <label for="car">Машина:</label>
+            <select id="car" name="car" required>
+                <option value="">Выберите машину</option>
+                <option value="car1">Audi R8</option>
+                <option value="car2">AMG GTS</option>
+                <option value="car3">M4 COMPETITION</option>
+            </select>
+            <input type="submit" value="Отправить">
+        </form>
     </div>
-</div>
-<div class="header-holder"></div>
+    <script src="rent.js"></script>
 
-    <div class="main pb-0">
-    <div class="container">
-        <h1>Аренда</h1>
-        <div class="submenu scrollable">
-    <ul class="submenu__nav scrollable__nav d-flex">
-        <li class="-active"><a href="/rent">Трассы</a></li>
-        <li><a href="/rent/vip">VIP-ложи</a></li>
-        <li><a href="/rent/adv">Дополнительные возможности</a></li>
-        <li class="scrollable__last"></li>
-    </ul>
-    <div class="scrollable__fade"><svg class="icon-right"><use xlink:href="/themes/mrw/i/sprite.svg#icon-right"></use></svg></div>
-</div>
-       <div class="rent-track__info rent-track-info">
-            <div class="row">
-                <div class="col-lg-6 rent-track-info__left">
-                    <div class="gallery__wrap">
-                        <div class="gallery royalSlider -autoHeight">
-                            <a class="rsImg" href="rent_track_1.jpg"></a>
-                            <a class="rsImg" href="rent_track_2.jpg"></a>
-                            <a class="rsImg" href="rent_track_3.jpg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 rent-track-info__right">
-                    <h5>У&nbsp;трека <span>три</span> основных конфигурации</h5>
-                    <div class="rent-track__confs rent-track-confs">
-                        <div class="rent-track-confs__item">
-                            <div class="rent-track-confs__title">
-                                Гран-при&nbsp;&mdash; <span>4&nbsp;км</span>
-                            </div>
-                            <div class="rent-track-confs__text">
-                                включая командный офис и&nbsp;комнату для&nbsp;инструктажа
-                            </div>
-                        </div>
-                        <div class="rent-track-confs__item">
-                            <div class="rent-track-confs__title">
-                                Спринт&nbsp;&mdash; <span>2,5&nbsp;км</span>
-                            </div>
-                        </div>
-                        <div class="rent-track-confs__item">
-                            <div class="rent-track-confs__title">
-                                Суперспринт&nbsp;&mdash; <span>1,3&nbsp;км</span>
-                            </div>
-                        </div>
-                        <div class="rent-track-confs-more d-sm-flex align-items-baseline justify-content-lg-between">
-                            <div class="rent-track-confs-more__title">
-                                И&nbsp;ещё 17&nbsp;&mdash; дополнительных
-                            </div>
-                            <div class="rent-track-confs-more__btn">
-                                <a href="/info" class="btn -small -skew -arrowed-right" target="_blank">Изучить трек <span class="btn__arrow -skew"><svg class="icon-right"><use xlink:href="/themes/mrw/i/sprite.svg#icon-right"></use></svg></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rent-track__attrs rent-track-attrs">
-                        <div class="rent-track-attrs__title">Атрибуты</div>
-                        <div class="rent-track-attrs__list">
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <div class="rent-track-attrs__item">
-                                        <div class="rent-track-attrs__label">Общая площадь</div>
-                                        <ul>
-                                            <li>Автодром: 720&nbsp;000&nbsp;м&sup2;</li>
-                                            <li>Паддок: 52&nbsp;000&nbsp;м&sup2;</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-5">
-                                    <div class="rent-track-attrs__item">
-                                        <div class="rent-track-attrs__label">Ширина</div>
-                                        <ul>
-                                            <li>Ширина: 12-21&nbsp;м</li>
-                                            <li>Стартовая линия: 15&nbsp;м</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                    </div>
-            </div>
-        </div>
-        <div class="rent-track__records records-list">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="records-list__item">
-                        <div class="h3 records-list__number">
-                            48
-                            <svg class="icon-record-auto"><use xlink:href="/themes/mrw/i/sprite.svg#icon-record-auto"></use></svg>
-                        </div>
-                        <div class="records-list__text">
-                            Максимальное количество машин в&nbsp;классе &laquo;Формула Renault&nbsp;2.0&raquo;
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="records-list__item">
-                        <div class="h3 records-list__number">
-                            317 км/ч
-                            <svg class="icon-record-speed"><use xlink:href="/themes/mrw/i/sprite.svg#icon-record-speed"></use></svg>
-                        </div>
-                        <div class="records-list__text">
-                            Максимальная скорость
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="records-list__item">
-                        <div class="h3 records-list__number">
-                            104
-                            <svg class="icon-record-people"><use xlink:href="/themes/mrw/i/sprite.svg#icon-record-people"></use></svg>
-                        </div>
-                        <div class="records-list__text">
-                            Максимальное количество<br> пилотов
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="records-list__item">
-                        <div class="h3 records-list__number">
-                            34
-                            <svg class="icon-record-team"><use xlink:href="/themes/mrw/i/sprite.svg#icon-record-team"></use></svg>
-                        </div>
-                        <div class="records-list__text">
-                            Максимальное количество<br> команд
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="rent-choose -black">
-    <div class="container">
-
-        <div class="h3 rent-choose__title">Вы можете арендовать</div>
-        <div class="rent-choose__list">
-            <div class="row -gap-20">
-                <div class="col-sm-4">
-                    <div class="rent-choose__item rent-choose-item">
-                        <div class="rent-choose-item__image">
-                            <img src="/themes/mrw/i/rent-options-1.jpg" alt="Пит-боксы">
-                        </div>
-                        <div class="rent-choose-item__content">
-                            <div class="rent-choose-item__title">
-                                Пит-боксы
-                            </div>
-                            <div class="rent-choose-item__text">
-                                Боксы оснащены всем необходимым для удобной работы с&nbsp;электро и&nbsp;пневмоинструментом.
-                            </div>
-                        </div>
-                        <a href="/rent/vip#pit" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="rent-choose__item rent-choose-item">
-                        <div class="rent-choose-item__image">
-                            <img src="/themes/mrw/i/rent-options-2.jpg" alt="Автомобили">
-                        </div>
-                        <div class="d-lg-flex justify-content-between">
-                            <div class="rent-choose-item__content">
-                                <div class="rent-choose-item__title">
-                                    Автомобили
-                                </div>
-                                <div class="rent-choose-item__text">
-                                    Мощные. Громкие. Быстрые.
-                                </div>
-                            </div>
-                            <div class="rent-choose-item__btn">
-                                <a href="/rent/auto" class="stretched-link"></a>
-                                <a class="btn -small -skew">Выбрать</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="rent-choose__item rent-choose-item">
-                        <div class="rent-choose-item__image">
-                            <img src="/themes/mrw/i/rent-options-3.jpg" alt="Медиа-центр">
-                        </div>
-                        <div class="rent-choose-item__content">
-                            <div class="rent-choose-item__title">
-                                Медиа-центр
-                            </div>
-                            <div class="rent-choose-item__text">
-                                Выстроенный согласно строжайшим правилам международных спортивных организаций.
-                            </div>
-                        </div>
-                        <a href="/rent/vip#media" class="stretched-link"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    </div>
-</div>
-
-</div>
 </body>
 </html>
