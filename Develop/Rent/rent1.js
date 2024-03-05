@@ -39,6 +39,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     }
 });
 
+const name=document.getElementById('name');
 
 
 function validateEmail(email) {

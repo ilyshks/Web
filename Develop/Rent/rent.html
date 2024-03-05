@@ -20,8 +20,10 @@
         <form novalidate id="form">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
+            <span id="nameError" class="error"></span>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
             <label for="date">Время:</label>
             <select id="date" name="date" required>
                 <option value="">Время</option>
@@ -29,6 +31,7 @@
                 <option value="date2">13:00-16:00</option>
                 <option value="date3">17:00-20:00</option>
             </select>
+            <span id="dateError" class="error"></span>
             <label for="car">Машина:</label>
             <select id="car" name="car" required>
                 <option value="">Выберите машину</option>
@@ -36,6 +39,7 @@
                 <option value="car2">AMG GTS</option>
                 <option value="car3">M4 COMPETITION</option>
             </select>
+            <span id="carError" class="error"></span>
             <button type="submit">Отправить</button>
         </form>
     </div>
