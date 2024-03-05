@@ -64,7 +64,7 @@ select {
     border-radius: 4px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     margin-top: 20px;
     padding: 10px;
     background-color: #007BFF;
@@ -74,6 +74,6 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: #0056b3;
 }

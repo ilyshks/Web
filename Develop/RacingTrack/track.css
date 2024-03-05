@@ -65,3 +65,8 @@ h1, h2 {
 .track-image:not(:first-child) {
     margin-left: 10px; /* Отступ слева для всех картинок кроме первой */
 }
+
+.map {
+    padding: 10px;
+    margin: 0 auto;
+}
