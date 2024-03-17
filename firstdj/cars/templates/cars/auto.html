@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'cars/css/auto.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Доступные автомобили для аренды</h1>
+        <div class="car-list">
+            <div class="car">
+                <img src="{% static 'cars/images/audi.jpg' %}" alt="Фото автомобиля">
+                <h3>R8 V10 Performance</h3>
+                <p class="description">Мощность, л.с.: 570</p>
+                <p class="description">Разгон до 100 км/ч, сек.: 3.5</p>
+                <p class="description">Максимальная скорость, км/ч: 329</p>
+                <p class="description">Тип КПП: автоматическая</p>
+                <p class="description">Тип привода: задний</p>
+            </div>
+            <div class="car">
+                <img src="{% static 'cars/images/AMG GTS.jpg' %}" alt="Фото автомобиля">
+                <h3>AMG GTS</h3>
+                <p class="description">Мощность, л.с.: 510–585</p>
+                <p class="description">Разгон до 100 км/ч, сек.: 3.5-3.8</p>
+                <p class="description">Максимальная скорость, км/ч: 310</p>
+                <p class="description">Тип КПП: автоматическая</p>
+                <p class="description">Тип привода: задний</p>
+            </div>
+            <div class="car">
+                <img src="{% static 'cars/images/M4.jpg' %}" alt="Фото автомобиля">
+                <h3>M4 COMPETITION</h3>
+                <p class="description">Мощность, л.с.: 500–510</p>
+                <p class="description">Разгон до 100 км/ч, сек.: 3.6–3.9</p>
+                <p class="description">Максимальная скорость, км/ч: 250–310</p>
+                <p class="description">Тип КПП: автоматическая</p>
+                <p class="description">Тип привода: задний</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="rent-button">
+        <button class="button" onclick="location.href='../Rent/rent.html'">Перейти к аренде</button>
+    </div>
+{% endblock %}
