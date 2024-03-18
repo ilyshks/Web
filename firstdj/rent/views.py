@@ -3,9 +3,9 @@ from django.shortcuts import render
 
 
 menu = {
-    "Трасса": "track",
-    "Автомобили": "cars",
-    'Аренда': 'rent',
+    "Трасса": "/track",
+    "Автомобили": "/cars",
+    'Аренда': '/rent',
 }
 
 

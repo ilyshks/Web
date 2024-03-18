@@ -1,11 +1,10 @@
 from django.http import HttpResponseNotFound
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
 
 menu = {
-    "Трасса": "track",
-    "Автомобили": "cars",
-    'Аренда': 'rent',
+    "Трасса": "/track",
+    "Автомобили": "/cars",
+    'Аренда': '/rent',
 }
 
 
@@ -15,6 +14,10 @@ def track(request):
         'menu': menu,
     }
     return render(request, 'track/track.html', context=data)
+
+
+def home(request):
+    return redirect('track')
 
 
 def page_not_found(request, exception):

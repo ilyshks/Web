@@ -17,12 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from track.views import home
 from cars import views
 
 base_url = 'http://127.0.0.1:8000/'
 
 urlpatterns = [
-    path('', include('track.urls')),
+    path('', home),
+    path('track/', include('track.urls')),
     path('cars/', include('cars.urls')),
     path('rent/', include('rent.urls')),
     path('admin/', admin.site.urls),
