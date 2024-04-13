@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'rent/css/rent.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="form-container">
+        <h1>Аренда трека</h1>
+        <form novalidate id="form" action="" method="post">
+            {% csrf_token %}
+
+            <label for="name">Имя:</label>
+            <input type="text" class="form-input" id="name" name="name" required>
+            <span id="nameError" class="error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" class="form-input" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+
+            <label for="date">Дата:</label>
+            <select id="date" name="date" required>
+                <option value="">Дата</option>
+                <option value="date1">03.04.2024</option>
+                <option value="date2">04.04.2024</option>
+                <option value="date3">05.04.2024</option>
+                <option value="date4">06.04.2024</option>
+            </select>
+            <span id="dateError" class="error"></span>
+
+            <label for="time">Время:</label>
+            <select id="time" name="time" required>
+                <option value="">Время</option>
+                <option value="time1">9:00-12:00</option>
+                <option value="time2">13:00-16:00</option>
+                <option value="time3">17:00-20:00</option>
+            </select>
+            <span id="timeError" class="error"></span>
+
+            <label for="car">Машина:</label>
+            <select id="car" name="car" required>
+                <option value="">Выберите машину</option>
+                <option value="car1">Audi R8</option>
+                <option value="car2">AMG GTS</option>
+                <option value="car3">M4 COMPETITION</option>
+            </select>
+            <span id="carError" class="error"></span>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="{% static 'rent/js/rent.js' %}"></script>
+{% endblock %}

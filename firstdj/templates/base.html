@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {% block title %} {% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                {% for key, value in menu.items %}
+                    <li><a href='{{value}}'>{{ key }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    {% block content %} {% endblock %}
+</body>
+</html>
